@@ -263,7 +263,7 @@ A. The dependencies for this project are mysql, org.mongodb, and two versions of
 
 
 what is dependency injection in java?
-A. Dependency Injection is the concept of objects getting other objects from outside. 
+A. Dependency Injection is the process of supplying a resource that a code in Java requires.. 
 
 
 What is static binding and dynamic binding?

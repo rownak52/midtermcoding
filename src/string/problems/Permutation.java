@@ -9,5 +9,10 @@ public class Permutation {
          * Write Java program to compute all Permutation of a String
          *
          */
+    	String permuatation = "";
+    	System.out.println(permuatation);
+    	
+    	
+    	
     }
 }
