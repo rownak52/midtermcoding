@@ -2,11 +2,13 @@ package design;
 
 import java.util.Scanner;
 
-public class EmployeeInfo {
+public class EmployeeInfo extends ImplementEmployee{
 	
  /*This class can be implemented from Employee interface then add additional methods in EmployeeInfo class.
  * Also, Employee interface can be implemented into an abstract class.So create an Abstract class
- * then inherit that abstract class into EmployeeInfo class.Once you done with designing EmployeeInfo class,
+ * then inherit that abstract class into EmployeeInfo class.----------------------------------------------------------
+ * 
+ * Once you done with designing EmployeeInfo class,
  * go to FortuneEmployee class to apply all the fields and attributes.
  * 
  * Important: YOU MUST USE the 
@@ -20,7 +22,8 @@ public class EmployeeInfo {
 	/*
 	 * declare few static and final fields and some non-static fields
 	 */
-	static String companyName;
+	static String companyName = "People N Tech";
+	static int salary;
 	
 	/*
 	 * You must implement the logic for below 2 methods and 
@@ -30,15 +33,18 @@ public class EmployeeInfo {
 	
 	/*
 	 * you must have multiple constructor.
-	 * Must implement below constructor.
+	 * Must implement below constructor.--------------------------------------------
 	 */
 	public EmployeeInfo(int employeeId){
 		
 	}
     public EmployeeInfo(String name, int employeeId){
-		
+    	
 	}
 	
+	public EmployeeInfo() {
+		// TODO Auto-generated constructor stub
+	}
 	/*
 	 * This methods should calculate Employee bonus based on salary and performance.
 	 * Then it will return the total yearly bonus. So you need to implement the logic.
@@ -47,8 +53,15 @@ public class EmployeeInfo {
 	 * So you probably need to send 2 arguments.
 	 * 
 	 */
-	public static int calculateEmployeeBonus(int numberOfYearsWithCompany){
+	public static int calculateEmployeeBonus(int numberOfYearsWithCompany, int performance){
 		int total=0;
+		
+		if (performance<0 || performance>100) {
+			System.out.println("Please rate your employee between 0 to 100"); 
+		
+		total = (salary/10)*12;
+		
+		
 		return total;
 	}
 	
@@ -133,5 +146,25 @@ public class EmployeeInfo {
 			return date;
 
 		}
+	}
+	public int employeeId() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	public String employeeName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	public void assignDepartment() {
+		// TODO Auto-generated method stub
+		
+	}
+	public int calculateSalary() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	public void benefitLayout() {
+		// TODO Auto-generated method stub
+		
 	}
 }
