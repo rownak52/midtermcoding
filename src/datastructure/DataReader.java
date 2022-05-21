@@ -60,7 +60,7 @@ store += line;
 } catch (Exception e) {
 
 // handle exception
-System.out.println("Error unable to read");
+System.out.println("Error---unable to read");
 
 }
 

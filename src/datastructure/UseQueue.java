@@ -15,11 +15,11 @@ public static void main(String[] args) {
 
 Queue<String> pq = new PriorityQueue<String>();
 
-pq.add("Redbull");
-pq.add("Monster");
-pq.add("C4");
-pq.add("Bang");
-pq.add("Coffee");
+pq.add("Biriyani");
+pq.add("Beef Curry");
+pq.add("Shrimp Curry");
+pq.add("Mac n Cheese");
+pq.add("borhani");
 System.out.println("Queue: \n" + pq);
 
 System.out.println("\nPeek: \n" + pq.peek());
